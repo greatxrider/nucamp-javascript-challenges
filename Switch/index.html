@@ -1,0 +1,60 @@
+<h1>Code Challenge: Switch</h1>
+<section>
+  <h2>Instructions</h2>
+    <p>Log into Codepen if you haven't, then fork this Code Challenge (find the Fork button on the bottom right) to your own account.</p>
+    <p>
+      Codepen has a built-in developer console of its own. It should be open on this page already. If you do not see it, open it with the <b>Console</b> button at the bottom left corner of this page. Note that Codepen's Console does not log most error messages -- to see those, you may need to also open your browser's developer console. 
+    </p>      
+    <p>You will only need to update the code in the JS section of this Codepen for this challenge.</p>
+
+</section>
+<section>
+<h2>Challenge</h2>
+  <p>A local arcade is offering three levels of membership: gold, silver, and bronze. Each level has its own set of perks:</p>
+  <ul>
+    <li><b>GOLD</b>: Unlimited Free Plays and VIP Room Access.</li>
+    <li><b>SILVER</b>: VIP Room Access.</li>
+    <li><b>BRONZE</b>: VIP Room Access on Weekdays.</li>
+  </ul>
+  <p>Your task is to write a <b>switch</b> statement that will log the perks to the console for each level when a function named <b>getMembershipPerks</b> is called with an argument of either <b>'gold'</b>, <b>'silver'</b>, or <b>'bronze'</b>.</p>
+  <p>If <b>getMembershipPerks</b> is called with an argument of <b>'gold'</b>, then your switch statement should make <b>two</b> logs to the console: one that says <b>'Unlimited Free Plays'</b> and another that says <b>'VIP Room Access'</b>.</p>
+  <p>If <b>getMembershipPerks</b> is called with an argument of <b>'silver'</b>, then your switch statement should make <b>one</b> log to the console that says 'VIP Room Access'.</p>
+    <p>If <b>getMembershipPerks</b> is called with an argument of <b>'bronze'</b>, then your switch statement should make <b>one</b> log to the console that says <b>'VIP Room Access on Weekdays'</b>.</p>
+    <p>If <b>getMembershipPerks</b> is called with an argument that does not match one of the above, then your switch statement should make <b>one</b> log to the console that says <b>'Invalid membership level'</b>.</p>
+  <h3>Step-By-Step Instructions</h3>
+  <ol>
+    <li>Inside the function declaration for <b>getMembershipPerks</b>, write a switch statement that evaluates the expression <b>(mLevel)</b>, then set up the switch code block with { }.</li>
+    <li>Inside the switch code block { }, add <b>three cases</b> and a <b>default</b> case. The three cases should be for the values <b>'gold'</b>, <b>'silver'</b>, and <b>'bronze'</b>. Review what you have learned about the switch syntax to set this up correctly.</li>
+    <li>For the case of <b>'gold'</b>, console.log the text <b>'Unlimited Free Plays'</b> like this: <b>console.log('Unlimited Free Plays');</b></li>
+    <li>For the case of <b>'silver'</b>, console log the text <b>'VIP Room Access'</b>.</li>
+    <li>For the case of <b>'bronze'</b>, console.log the text <b>'VIP Room Access on Weekdays'</b>.</li>
+    <li>For the <b>default</b> case, console.log the text <b>'Invalid membership level'</b>.</li>
+    <li>You will need to add <b>break;</b> statements where necessary to achieve the desired behavior. </li>
+    <ul>
+      <li>
+        
+        <b>OPTIONAL BONUS CHALLENGE:</b> It is possible to write this switch statement so that only <b>two</b> of the <b>case</b>s require a break to achieve the desired behavior. Experiment to figure out which.
+      </li>
+    </ul>
+  </ol>
+<p> 
+</section>
+<section>
+  <h2>Testing</h2>
+  <p>Test your code with 4 test cases: when you call the function <b>getMembershipPerks</b> with the argument of <b>'gold'</b>, with the argument of <b>'silver'</b>, with the argument of <b>'bronze'</b>, and with an argument that does not match any of those.</p>
+  <p>The function call is already written for you with an argument of <b>'gold'</b> at the bottom of the JS panel. You need to change the argument to test the other cases, then click the <b>Run</b> button on the upper right of this Codepen. Ensure that for each case, your Codepen console looks the same as the screenshots shown in the learning portal page for this Code Challenge. (You may want to use the "Clear" button on the upper right of Codepen's console to clear it between tests.)
+  </p>
+</section>
+
+<hr />
+<section>
+<h2>Challenge Resources</h2>
+  <ul>
+    <li><a href="https://www.w3schools.com/js/js_switch.asp" target="_blank">W3Schools - Switch</a></li>
+    <li><a href="https://javascript.info/switch" target="_blank">JavaScript.info - Switch</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch" target="_blank">MDN - Switch</a></li>
+  </ul>
+</section>
+
+  
+<!-- original pen by https://codepen.io/minae/ -->

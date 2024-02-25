@@ -1,0 +1,36 @@
+body {
+    font-family: 'Sans Source Pro', sans-serif; 
+  }
+  
+  table {
+      border: 2px solid black;
+      border-radius: 10px;
+      font-family: Oxygen, 'Sans Source Pro', sans-serif;
+      margin: auto;
+  }
+  
+  th[colspan] {
+      background: seashell;
+      color: darkslategray;
+      padding: 5px;
+      font-size: 1.5em;
+  }
+  
+  th, td {
+      border: solid 1px darkgray;
+      border-radius: 6px;
+  
+  }
+  
+  th {
+      background: salmon;
+      color: snow;
+      padding: 10px 30px;
+  }
+  
+  td {
+      background: snow;
+      color: darkslategray;
+      padding: 30px;
+  }
+  
