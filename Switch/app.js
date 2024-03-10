@@ -1,4 +1,5 @@
 function getMembershipPerks(mLevel) {
+    
 /* Your switch statement should be written below this line.*/
     switch (mLevel) {
         case "gold":
