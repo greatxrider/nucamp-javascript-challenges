@@ -1,0 +1,39 @@
+#addItems {
+    display: flex;
+    height: auto;
+    gap: 10px;
+    height: 20px;
+}
+
+section>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main h1 {
+    margin: 0px;
+}
+
+@media print {
+    #addItems,
+    #printButton,
+    main h1 {
+        display: none;
+    }
+}
+
+#listTable {
+    margin: 0px;
+}

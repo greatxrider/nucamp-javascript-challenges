@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/matching-game.css">
+    <title>Matching Game</title>
+</head>
+
+<body onload="myModal.show()">
+    <h1>Matching Game</h1>
+    <p>Click on the extra smiling face on the left.</p>
+    <p id="nameDisplay"></p>
+    <p id="score"></p>
+    <div id="leftSide"></div>
+    <div id="rightSide"></div>
+    <!-- Modal -->
+    <div class="modal" tabindex="-1" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Welcome To The Matching Game</h5>
+                </div>
+                <form id="gameSettings">
+                    <div class="modal-body">
+                        <div id="playerInfo-container" class="input-group input-group mb-3">
+                            <label for="playerName" id="infoLabel">Player Name: </label>
+                            <input type="text" id="playerName" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" required>
+                        </div>
+                        <div id="difficulty-container">
+                            <label for="difficultyLevel" id="difficultyLabel">Difficulty Level: </label>
+                            <select class="form-select" aria-label="Default select example" id="difficultyLevel">
+                                <option class="dropdown-item" value="easy">Easy</option>
+                                <option class="dropdown-item" value="medium">Medium</option>
+                                <option class="dropdown-item" value="hard">Hard</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="startGame" onclick="buttonClickSound.play()">Start Game</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 2nd Modal -->
+    <div class="modal fade" tabindex="-1" id="gameOverModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="gameOverModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Game Over</h5>
+                </div>
+                <form id="gameOverSettings">
+                    <div class="modal-body">
+                        <p id="attempts"></p>
+                        <div id="difficulty-containerGameOver">
+                            <label for="difficultyLevelGameOver" id="difficultyLabelGameOver">Change Difficulty Level: </label>
+                            <select class="form-select" aria-label="Default select example" id="difficultyLevelGameOver">
+                                <option class="dropdown-item" value="easy">Easy</option>
+                                <option class="dropdown-item" value="medium">Medium</option>
+                                <option class="dropdown-item" value="hard">Hard</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="restartGame" onclick="buttonClickSound.play()">Restart Game</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Audio -->
+    <audio id="backgroundMusic" src="./audio/Wii Music - Gaming Background Music (HD).mp3" preload="auto" loop></audio>
+    <audio id="correctScoreSound" src="./audio/Score - Sound Effect for editing.mp3" preload="auto"></audio>
+    <audio id="gameOverSound" src="./audio/SUPER MARIO - game over - sound effect.mp3" preload="auto"></audio>
+    <audio id="buttonClickSound" src="./audio/Click - Sound Effect (HD).mp3" preload="auto"></audio>
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="./js/matching-game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List App</title>
+    <style>
+        ul {
+            list-style-type: '\2610 ';
+            cursor: pointer;
+        }
+
+        @media print {
+            body h1,
+            #myForm,
+            #printButton {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Shopping List</h1>
+    <form id="myForm">
+        <label for="item">Add an item:</label>
+        <input id="item" type="text" name="item" />
+        <button type="button" onclick="getItem()">Add</button>
+    </form>
+    <ul id="shoppingList">
+        <!-- list items will go into this ul via DOM manipulation -->
+    </ul>
+    <p id="notif" style="color: red"></p>
+    <button type="button" id="printButton">Print List</button>
+    <script>
+        // add your JavaScript code here
+        const itemList = []
+        const shoppingList = document.getElementById('shoppingList')
+
+        function getItem() {
+            event.preventDefault()
+            const item = document.getElementById('item').value
+            try {
+                if (item !== '') {
+                    if (itemList.includes(item)) {
+                        document.getElementById(
+                            'notif'
+                        ).innerHTML = `${item} is already listed.`
+                        return
+                    } else {
+                        itemList.push(item)
+                        removeList()
+                        makeList()
+                    }
+                } else {
+                    throw new Error('Please enter a valid Input.')
+                }
+            } catch (error) {
+                document.getElementById('notif').innerHTML = `${error}`
+                return
+            }
+            document.getElementById('myForm').reset()
+            document.getElementById('notif').innerHTML = ''
+        }
+
+        function makeList() {
+            for (let items of itemList) {
+                const listItem = document.createElement('li')
+                listItem.textContent = items
+                listItem.addEventListener('click', removeItem)
+                shoppingList.appendChild(listItem)
+            }
+        }
+
+        function removeList() {
+            while (shoppingList.firstChild) {
+                shoppingList.removeChild(shoppingList.firstChild)
+            }
+        }
+
+        function removeItem(event) {
+            try {
+                const item = event.currentTarget.textContent
+                if (itemList.includes(item)) {
+                    const itemIndex = itemList.indexOf(item)
+                    itemList.splice(itemIndex, 1)
+                    removeList()
+                    makeList()
+                } else {
+                    throw new Error('The selected item is not on the list!')
+                }
+            } catch (error) {
+                document.getElementById('notif').innerHTML = `${error}`
+                return
+            }
+        }
+
+        document.getElementById('printButton').addEventListener('click', function () {
+            window.print();
+        });
+    </script>
+</body>
+
+</html>

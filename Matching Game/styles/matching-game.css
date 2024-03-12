@@ -1,0 +1,40 @@
+img {
+    position: absolute;
+}
+
+#leftSide, #rightSide {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+#rightSide {
+    left: 500px;
+    border-left: 3px solid;
+}
+
+body {
+    margin: 1rem;
+}
+
+.game-settings {
+    display: grid;
+}
+
+#playerInfo-container, #difficulty-container {
+    padding: 10px;
+}
+
+#infoLabel, #difficultyLabel {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.form-select {
+    display: inline;
+    width: auto;
+}
+
+#smile {
+    cursor: pointer;
+}
