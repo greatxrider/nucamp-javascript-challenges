@@ -1,0 +1,110 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#main-container {
+    height: 94%;
+    width: 100%;
+    margin: 0px;
+    background-size: 100% 100%;
+    margin: 0px;
+
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+#card-container {
+    height: 351px;
+    width: 555px;
+
+    border-radius: 0px 20px 20px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#generator-card {
+    position: relative;
+    display: inline-block;
+    height: 174px;
+    width: 519px;
+    color: #FFFFFF;
+}
+
+#btn-generate {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+    font-size: 24px;
+    line-height: auto;
+
+    height: 87px;
+    width: 306px;
+    border-radius: 25px;
+    background-color: #ABABAB;
+    border: none;
+    color: #FFFFFF;
+    transition: background-color 0.2s ease;
+}
+
+#generator-header {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+    font-size: 36px;
+    line-height: auto;
+}
+
+#generator-description {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 32px;
+
+    width: 519px;
+    height: 98px;
+}
+
+#generator-header p {
+    text-align: center;
+    align-self: center;
+    width: 520px;
+    height: 44px;
+    margin: 0px;
+}
+
+#generator-description p {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    margin: 0px;
+}
+
+#btn-generate:hover {
+    background-color: #cccbcb;
+}
+
+#btn-generate:active {
+    background-color: #8b8b8b;
+}
+
