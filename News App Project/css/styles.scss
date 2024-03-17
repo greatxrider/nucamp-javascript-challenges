@@ -1,0 +1,109 @@
+@import './column-sizing.scss';
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100%;
+}
+
+main {
+    position: relative;
+}
+
+#topbar-container {
+    font-family: "MaryTodd W00 Regular";
+    display: flex;
+    flex-direction: column;
+    background-color: #020809;
+    gap: 59.87px;
+    height: 475px;
+}
+
+footer {
+    background-color: #020809;
+}
+
+#content-container {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 160px;
+    background-color: #020809;
+}
+
+#title-container {
+    a {
+        font-size: 52px;
+        letter-spacing: 0%;
+        color: #F7F7F4;
+        text-decoration: none;
+        font-weight: bold;
+        align-items: end;
+    }
+}
+
+#search-bar-container {
+    position: relative;
+    align-self: center;
+    display: flex;
+    
+    input {
+        width: 636.53px;
+        color: #F7F7F4;
+        background-color: #04594D;
+        display: flex;     
+        padding-left: 46.36px;
+        background-color: #04594D;
+    }
+
+    input::placeholder {
+        color: #F7F7F4;
+        opacity: 35%;
+    }
+
+    input, button {
+        height: 40.13px;
+        border: none;
+    }
+
+    input:focus-visible {
+        outline: none;
+    }
+
+    button { 
+        font-weight: 900;
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: #F7F7F4;
+        width: 116.24px;
+        background-color: #8E4042;
+    }
+}
+
+.navbar {
+    padding: 0px;
+    height: 50px;
+    background-color: #1A1A1A;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    color: #FDFDFD;
+    height: 50px;
+    width: 90px;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: gray;
+}
+
+.nav-item:hover {
+    background-color: #04594D;
+}
