@@ -115,13 +115,14 @@
     width: 100%;
   }
 }
-html, body {
+html,
+body {
   margin: 0px;
   padding: 0px;
 }
 
 body {
-  background-color: #F3F2EA;
+  background-color: #f3f2ea;
 }
 
 #topbar-container {
@@ -133,10 +134,6 @@ body {
   height: 475px;
   position: relative;
   z-index: 0;
-}
-
-footer {
-  background-color: #020809;
 }
 
 #content-container {
@@ -156,7 +153,7 @@ main {
 #title-container a {
   font-size: 52px;
   letter-spacing: 0%;
-  color: #F7F7F4;
+  color: #f7f7f4;
   text-decoration: none;
   font-weight: bold;
   align-items: end;
@@ -168,17 +165,18 @@ main {
 }
 #search-bar-container input {
   width: 636.53px;
-  color: #F7F7F4;
-  background-color: #04594D;
+  color: #f7f7f4;
+  background-color: #04594d;
   display: flex;
   padding-left: 46.36px;
-  background-color: #04594D;
+  background-color: #04594d;
 }
 #search-bar-container input::placeholder {
-  color: #F7F7F4;
+  color: #f7f7f4;
   opacity: 35%;
 }
-#search-bar-container input, #search-bar-container button {
+#search-bar-container input,
+#search-bar-container button {
   height: 40.13px;
   border: none;
 }
@@ -189,51 +187,52 @@ main {
   font-weight: 900;
   font-size: 20px;
   letter-spacing: 1px;
-  color: #F7F7F4;
+  color: #f7f7f4;
   width: 116.24px;
-  background-color: #8E4042;
+  background-color: #8e4042;
 }
 
 .navbar {
   padding: 0px;
   height: 50px;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   position: relative;
   z-index: 100;
 }
 .navbar .navbar-brand {
-  color: #FDFDFD;
+  color: #fdfdfd;
 }
 .navbar .navbar-toggler-icon {
   color: white !important; /* Use only if necessary */
 }
 
-.nav-link {
+.navCon {
   display: flex;
   justify-content: center;
   align-items: center;
   align-items: center;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #FDFDFD;
+  color: #fdfdfd;
   height: 50px;
   width: 90px;
 }
 
-.nav-link:hover, .nav-link:focus {
+.navCon:hover,
+.navCon:focus {
   color: gray;
 }
 
-.nav-item:hover {
-  background-color: #04594D;
+.navCon:hover {
+  background-color: #04594d;
 }
 
 .navbar-collapse {
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
 }
 
 #top-headlines {
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
 }
 
 #blog-post1 {
@@ -247,7 +246,7 @@ main {
 #blog-post1 p {
   margin-bottom: 11px;
   font-size: 10px;
-  color: #04594D;
+  color: #04594d;
 }
 
 #carousel-article #main-headlines {
@@ -282,11 +281,11 @@ main {
 
 #news1-container {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   padding: 0px 25px 25px 25px;
 }
 #news1-container #content-news1 {
-  color: #F7F7F4;
+  color: #f7f7f4;
 }
 #news1-container #content-news1 p {
   text-align: left;
@@ -307,7 +306,7 @@ main {
   font-size: 20px;
   font-weight: bold;
   line-height: auto;
-  color: #F7F7F4;
+  color: #f7f7f4;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -318,7 +317,7 @@ main {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 #news2-container #article1-container {
-  border-bottom: 2px solid #F1F0F0;
+  border-bottom: 2px solid #f1f0f0;
 }
 #news2-container #article1-container h5 {
   font-weight: bold;
@@ -331,7 +330,7 @@ main {
   font-family: Arial, Helvetica, sans-serif;
 }
 #news2-container #article2-container h5 {
-  color: #04594D;
+  color: #04594d;
   font-size: 16px;
   line-height: auto;
   letter-spacing: 0%;
@@ -361,13 +360,15 @@ main {
 #other-news #otherNews-container #otherNewsCollection #otherNews-row #otherNews img {
   display: block;
   width: 100%;
+  height: 340px;
 }
 #other-news #otherNews-container #otherNewsCollection #otherNews-row #otherNews h5 {
+  width: 360px;
   font-size: 20px;
   font-weight: auto;
   position: absolute;
-  top: 70%;
-  left: 39%;
+  top: 75%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: white;
 }
@@ -378,6 +379,120 @@ main {
   left: 25%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+#trendingHeadlines {
+  padding: 20px;
+}
+#trendingHeadlines .position-sticky {
+  padding: 25px;
+  background-color: #fdfdfd;
+}
+#trendingHeadlines .position-sticky #trending-container {
+  border-top: #dfdfdf solid 1px;
+}
+#trendingHeadlines .position-sticky #trending-container .trendingimages {
+  width: 160px;
+  height: 140px;
+}
+#trendingHeadlines .position-sticky #trending-container #trendingNewsContent h6 {
+  text-align: left;
+  font-size: 15px;
+  color: black;
+}
+#trendingHeadlines .position-sticky #trending-container #trendingNewsContent p {
+  text-align: left;
+  font-size: 10px;
+  color: #04594d;
+}
+#trendingHeadlines .position-sticky #trending-container #trendingNewsContent small {
+  font-size: 9px;
+  color: #04594d;
+}
+
+#headlinesButton {
+  background-color: #1a1a1a;
+  border-radius: 2.77px;
+  color: #fdfdfd;
+}
+
+#viewMore {
+  font-family: "MaryTodd W00 Regular";
+  border: 0px;
+  font-size: 20px;
+  color: white;
+  background-color: #04594d;
+  width: 119px;
+  height: 48px;
+}
+
+#viewMore:hover {
+  background-color: #067c6c;
+}
+
+#viewMore:active {
+  background-color: #023d34;
+}
+
+footer {
+  font-family: "MaryTodd W00 Regular";
+  background-color: #020809;
+  padding: 50px;
+}
+footer .row #logoFooterContainer #footerLogo {
+  font-weight: bold;
+  font-size: 52px;
+  text-decoration: none;
+  color: #f7f7f4;
+}
+footer .row #logoFooterContainer #footerLogo:hover {
+  color: #04594d;
+}
+footer .row #middleFooter h6 {
+  text-align: center;
+  padding: 15px;
+  color: #fdfdfd;
+}
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  line-height: 100%;
+  font-weight: bold;
+  letter-spacing: 0%;
+  height: 40px;
+  width: 90px;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: gray;
+}
+
+.midFootLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fdfdfd;
+  height: 50px;
+  width: 115px;
+}
+
+.midFootLink:hover,
+.midFootLink:focus {
+  color: gray;
+}
+
+.nav-link {
+  color: #fdfdfd;
+}
+
+.nav-link:hover {
+  color: #04594d;
 }
 
 /*# sourceMappingURL=styles.css.map */
