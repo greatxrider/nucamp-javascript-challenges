@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link href="https://db.onlinewebfonts.com/c/57de0e33a644cc8501a1835d273b75dd?family=MaryTodd+W00+Regular"
         rel="stylesheet">
@@ -26,9 +26,9 @@
                             <input class="col-8 col-sm-8 col-md-12" type="search" id="site-search" name="q"
                                 aria-label="Search through site content" placeholder="Search for headlines">
                         </div>
-                        <div class="col-auto">
-                            <button type="submit">SEARCH</button>
-                        </div>
+
+                        <button class="col-auto" type="submit">SEARCH</button>
+
                     </div>
                 </div>
             </header>
@@ -42,35 +42,35 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                        <ul class="d-flex justify-content-center navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item navItems">
                                 <a class="nav-link navCon" href="#">Politics</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item navItems">
                                 <a class="nav-link navCon" href="#">World</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item navItems">
                                 <a class="nav-link navCon" href="#">Economy</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item navItems">
                                 <a class="nav-link navCon" href="#">Science & Tech</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item navItems">
                                 <a class="nav-link navCon" href="#">Business</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item navItems">
                                 <a class="nav-link navCon" href="#">Travel</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item navItems">
                                 <a class="nav-link navCon" href="#">Climate</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item navItems">
                                 <a class="nav-link navCon" href="#">Lifestyle</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item navItems">
                                 <a class="nav-link navCon" href="#">Food</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item navItems">
                                 <a class="nav-link navCon" href="#">Sports</a>
                             </li>
                         </ul>
@@ -131,8 +131,9 @@
                             <div class="d-flex flex-column gap-3" id="news-container">
                                 <!-- News 1 -->
                                 <div class="container" id="news1-container">
-                                    <div class="d-flex flex-wrap" id="content-news1">
-                                        <p class="col-sm-6">Secretary of State Antony J. Blinken on Friday canceled a
+                                    <div class="d-flex flex-wrap justify-content-center" id="content-news1">
+                                        <p class="col-sm-6 text-center text-sm-start">Secretary of State Antony J.
+                                            Blinken on Friday canceled a
                                             weekend
                                             trip to Beijing after a Chinese spy balloon was sighted above the Rocky
                                             Mountain
@@ -173,93 +174,18 @@
             <div class="row g-5" id="other-news">
                 <div class="col-md-8" id="otherNews-container">
                     <div class="d-flex align-content-center" id="latest-hl">
-                        <h3 class="m-4" id="latest-news">LATEST News</h3>
+                        <h3 class="m-3" id="latest-news">Latest News</h3>
                         <div class="align-self-center" id="horizontal-line"></div>
                     </div>
                     <div id="otherNewsCollection">
-                        <div class="row" id="otherNews-row">
+                        <div class="row d-flex justify-content-center" id="otherNews-row">
                             <!-- Other News 1 -->
                             <div class="col-lg-6" id="otherNews">
-                                <div id="news1-img">
-                                    <img src="/img/Frame 7.png" class="d-block w-100" alt="1">
-                                    <h5>Pervez Musharraf, Former Military Ruler of Pakistan, Dies at 79</h5>
-                                    <div class="d-flex gap-3" id="author">
-                                        <p>By Ginny Dennis</p>
-                                        <p>Feb. 4, 2023</p>
+                                <div class="d-flex flex-column justify-content-end p-3" id="news1-img">
+                                    <div class="d-flex flex-wrap align-content-start">
+                                        <h5>Pervez Musharraf, Former Military Ruler of Pakistan,
+                                            Dies at 79</h5>
                                     </div>
-                                </div>
-                            </div>
-                            <!-- Other News 2 -->
-                            <div class="col-lg-6" id="otherNews">
-                                <div id="news1-img">
-                                    <img src="/img/Rectangle 19.png" class="d-block w-100" alt="1">
-                                    <h5>Pervez Musharraf, Former Military Ruler of Pakistan, Dies at 79</h5>
-                                    <div class="d-flex gap-3" id="author">
-                                        <p>By Ginny Dennis</p>
-                                        <p>Feb. 4, 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Other News 3 -->
-                            <div class="col-lg-6" id="otherNews">
-                                <div id="news1-img">
-                                    <img src="/img/Rectangle 19.png" class="d-block w-100" alt="1">
-                                    <h5>Pervez Musharraf, Former Military Ruler of Pakistan, Dies at 79</h5>
-                                    <div class="d-flex gap-3" id="author">
-                                        <p>By Ginny Dennis</p>
-                                        <p>Feb. 4, 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Other News 4 -->
-                            <div class="col-lg-6" id="otherNews">
-                                <div id="news1-img">
-                                    <img src="/img/Rectangle 19.png" class="d-block w-100" alt="1">
-                                    <h5>Pervez Musharraf, Former Military Ruler of Pakistan, Dies at 79</h5>
-                                    <div class="d-flex gap-3" id="author">
-                                        <p>By Ginny Dennis</p>
-                                        <p>Feb. 4, 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Other News 5 -->
-                            <div class="col-lg-6" id="otherNews">
-                                <div id="news1-img">
-                                    <img src="/img/Rectangle 19.png" class="d-block w-100" alt="1">
-                                    <h5>Pervez Musharraf, Former Military Ruler of Pakistan, Dies at 79</h5>
-                                    <div class="d-flex gap-3" id="author">
-                                        <p>By Ginny Dennis</p>
-                                        <p>Feb. 4, 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Other News 6 -->
-                            <div class="col-lg-6" id="otherNews">
-                                <div id="news1-img">
-                                    <img src="/img/Rectangle 19.png" class="d-block w-100" alt="1">
-                                    <h5>Pervez Musharraf, Former Military Ruler of Pakistan, Dies at 79</h5>
-                                    <div class="d-flex gap-3" id="author">
-                                        <p>By Ginny Dennis</p>
-                                        <p>Feb. 4, 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Other News 7 -->
-                            <div class="col-lg-6" id="otherNews">
-                                <div id="news1-img">
-                                    <img src="/img/Rectangle 19.png" class="d-block w-100" alt="1">
-                                    <h5>Pervez Musharraf, Former Military Ruler of Pakistan, Dies at 79</h5>
-                                    <div class="d-flex gap-3" id="author">
-                                        <p>By Ginny Dennis</p>
-                                        <p>Feb. 4, 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Other News 8 -->
-                            <div class="col-lg-6" id="otherNews">
-                                <div id="news1-img">
-                                    <img src="/img/Rectangle 19.png" class="d-block w-100" alt="1">
-                                    <h5>Pervez Musharraf, Former Military Ruler of Pakistan, Dies at 79</h5>
                                     <div class="d-flex gap-3" id="author">
                                         <p>By Ginny Dennis</p>
                                         <p>Feb. 4, 2023</p>
@@ -267,59 +193,11 @@
                                 </div>
                             </div>
                             <div class="col-lg-6" id="otherNews">
-                                <div id="news1-img">
-                                    <img src="/img/Frame 7.png" class="d-block w-100" alt="1">
-                                    <h5>Pervez Musharraf, Former Military Ruler of Pakistan, Dies at 79</h5>
-                                    <div class="d-flex gap-3" id="author">
-                                        <p>By Ginny Dennis</p>
-                                        <p>Feb. 4, 2023</p>
+                                <div class="d-flex flex-column justify-content-end p-3" id="news1-img">
+                                    <div class="d-flex flex-wrap align-content-start">
+                                        <h5>Pervez Musharraf, Former Military Ruler of Pakistan,
+                                            Dies at 79</h5>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6" id="otherNews">
-                                <div id="news1-img">
-                                    <img src="/img/Frame 7.png" class="d-block w-100" alt="1">
-                                    <h5>Pervez Musharraf, Former Military Ruler of Pakistan, Dies at 79</h5>
-                                    <div class="d-flex gap-3" id="author">
-                                        <p>By Ginny Dennis</p>
-                                        <p>Feb. 4, 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6" id="otherNews">
-                                <div id="news1-img">
-                                    <img src="/img/Frame 7.png" class="d-block w-100" alt="1">
-                                    <h5>Pervez Musharraf, Former Military Ruler of Pakistan, Dies at 79</h5>
-                                    <div class="d-flex gap-3" id="author">
-                                        <p>By Ginny Dennis</p>
-                                        <p>Feb. 4, 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6" id="otherNews">
-                                <div id="news1-img">
-                                    <img src="/img/Frame 7.png" class="d-block w-100" alt="1">
-                                    <h5>Pervez Musharraf, Former Military Ruler of Pakistan, Dies at 79</h5>
-                                    <div class="d-flex gap-3" id="author">
-                                        <p>By Ginny Dennis</p>
-                                        <p>Feb. 4, 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6" id="otherNews">
-                                <div id="news1-img">
-                                    <img src="/img/Frame 7.png" class="d-block w-100" alt="1">
-                                    <h5>Pervez Musharraf, Former Military Ruler of Pakistan, Dies at 79</h5>
-                                    <div class="d-flex gap-3" id="author">
-                                        <p>By Ginny Dennis</p>
-                                        <p>Feb. 4, 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6" id="otherNews">
-                                <div id="news1-img">
-                                    <img src="/img/Frame 7.png" class="d-block w-100" alt="1">
-                                    <h5>Pervez Musharraf, Former Military Ruler of Pakistan, Dies at 79</h5>
                                     <div class="d-flex gap-3" id="author">
                                         <p>By Ginny Dennis</p>
                                         <p>Feb. 4, 2023</p>
@@ -342,10 +220,12 @@
                         <div id="trending-container">
                             <ul class="list-unstyled">
                                 <li>
-                                    <a class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center py-4 gap-3 link-body-emphasis text-decoration-none border-top"
+                                    <a class="d-flex flex-sm-column flex-xl-row align-items-center  py-4 gap-3 link-body-emphasis text-decoration-none border-top"
                                         href="#">
+                                        <!-- image -->
                                         <img src="./img/Rectangle 19.png" class="bd-placeholder-img trendingimages"
                                             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <!-- content -->
                                         <div class="d-flex flex-column gap-2" id="trendingNewsContent">
                                             <h6 class="mb-0">U.S. downs suspected Chinese spy balloon over the Atlantic
                                                 coast</h6>
@@ -361,10 +241,12 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center py-4 gap-3 link-body-emphasis text-decoration-none border-top"
+                                    <a class="d-flex flex-sm-column flex-xl-row align-items-center  py-4 gap-3 link-body-emphasis text-decoration-none border-top"
                                         href="#">
+                                        <!-- image -->
                                         <img src="./img/Rectangle 19.png" class="bd-placeholder-img trendingimages"
                                             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <!-- content -->
                                         <div class="d-flex flex-column gap-2" id="trendingNewsContent">
                                             <h6 class="mb-0">U.S. downs suspected Chinese spy balloon over the Atlantic
                                                 coast</h6>
@@ -380,10 +262,12 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center py-4 gap-3 link-body-emphasis text-decoration-none border-top"
+                                    <a class="d-flex flex-sm-column flex-xl-row align-items-center  py-4 gap-3 link-body-emphasis text-decoration-none border-top"
                                         href="#">
+                                        <!-- image -->
                                         <img src="./img/Rectangle 19.png" class="bd-placeholder-img trendingimages"
                                             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <!-- content -->
                                         <div class="d-flex flex-column gap-2" id="trendingNewsContent">
                                             <h6 class="mb-0">U.S. downs suspected Chinese spy balloon over the Atlantic
                                                 coast</h6>
@@ -399,10 +283,12 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center py-4 gap-3 link-body-emphasis text-decoration-none border-top"
+                                    <a class="d-flex flex-sm-column flex-xl-row align-items-center  py-4 gap-3 link-body-emphasis text-decoration-none border-top"
                                         href="#">
+                                        <!-- image -->
                                         <img src="./img/Rectangle 19.png" class="bd-placeholder-img trendingimages"
                                             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <!-- content -->
                                         <div class="d-flex flex-column gap-2" id="trendingNewsContent">
                                             <h6 class="mb-0">U.S. downs suspected Chinese spy balloon over the Atlantic
                                                 coast</h6>
@@ -418,10 +304,12 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center py-4 gap-3 link-body-emphasis text-decoration-none border-top"
+                                    <a class="d-flex flex-sm-column flex-xl-row align-items-center  py-4 gap-3 link-body-emphasis text-decoration-none border-top"
                                         href="#">
+                                        <!-- image -->
                                         <img src="./img/Rectangle 19.png" class="bd-placeholder-img trendingimages"
                                             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <!-- content -->
                                         <div class="d-flex flex-column gap-2" id="trendingNewsContent">
                                             <h6 class="mb-0">U.S. downs suspected Chinese spy balloon over the Atlantic
                                                 coast</h6>
