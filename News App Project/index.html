@@ -44,34 +44,34 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="d-flex justify-content-center navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item navItems">
-                                <a class="nav-link navCon" href="#">Politics</a>
+                                <a class="nav-link navCon navLinkText" href="#">Politics</a>
                             </li>
                             <li class="nav-item navItems">
-                                <a class="nav-link navCon" href="#">World</a>
+                                <a class="nav-link navCon navLinkText" href="#">World</a>
                             </li>
                             <li class="nav-item navItems">
-                                <a class="nav-link navCon" href="#">Economy</a>
+                                <a class="nav-link navCon navLinkText" href="#">Economy</a>
                             </li>
                             <li class="nav-item navItems">
-                                <a class="nav-link navCon" href="#">Science & Tech</a>
+                                <a class="nav-link navCon navLinkText" href="#">Science & Tech</a>
                             </li>
                             <li class="nav-item navItems">
-                                <a class="nav-link navCon" href="#">Business</a>
+                                <a class="nav-link navCon navLinkText" href="#">Business</a>
                             </li>
                             <li class="nav-item navItems">
-                                <a class="nav-link navCon" href="#">Travel</a>
+                                <a class="nav-link navCon navLinkText" href="#">Travel</a>
                             </li>
                             <li class="nav-item navItems">
-                                <a class="nav-link navCon" href="#">Climate</a>
+                                <a class="nav-link navCon navLinkText" href="#">Climate</a>
                             </li>
                             <li class="nav-item navItems">
-                                <a class="nav-link navCon" href="#">Lifestyle</a>
+                                <a class="nav-link navCon navLinkText" href="#">Lifestyle</a>
                             </li>
                             <li class="nav-item navItems">
-                                <a class="nav-link navCon" href="#">Food</a>
+                                <a class="nav-link navCon navLinkText" href="#">Food</a>
                             </li>
                             <li class="nav-item navItems">
-                                <a class="nav-link navCon" href="#">Sports</a>
+                                <a class="nav-link navCon navLinkText" href="#">Sports</a>
                             </li>
                         </ul>
                     </div>
@@ -85,42 +85,14 @@
                         <div class="p-4" id="carousel-article">
                             <!-- Left Carousel News -->
                             <div id="main-headlines" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="/img/Frame 14.png" class="d-block" alt="1">
-                                        <div class="carousel-caption d-block w-100">
-                                            <h5>Democrats Overhaul Party’s Primary Calendar, Upending a Political
-                                                Tradition
-                                            </h5>
-                                            <div class="d-flex gap-3">
-                                                <p>By Ginny Dennis</p>
-                                                <p>Just now</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/img/Frame 14.png" class="d-block " alt="2">
-                                        <div class="carousel-caption d-block w-100">
-                                            <h5>Democrats Overhaul Party’s Primary Calendar, Upending a Political
-                                                Tradition
-                                            </h5>
-                                            <div class="d-flex gap-3">
-                                                <p>By Ginny Dennis</p>
-                                                <p>Just now</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="carousel-inner" id="carouselDivsItems">
+                                    <!-- Carousel Items -->
                                 </div>
                             </div>
                             <!-- Left News Blog -->
                             <div class="blog-post d-flex flex-column justify-content-center" id="blog-post1">
-                                <h4 class="link-body-emphasis fw-bold">Philomena Cunk Is Weird Enough to Take on
-                                    the
-                                    World</h4>
-                                <p>The new Netflix show “Cunk on Earth” looks like an ambitious BBC documentary. Until
-                                    its
-                                    fictional host, created by Charlie Brooker, starts to ask some deeply silly
-                                    questions.
+                                <h4 class="link-body-emphasis fw-bold" id="blogPostHeading"></h4>
+                                <p id="blogPostParagraph">
                                 </p>
                             </div>
                         </div>
@@ -132,36 +104,26 @@
                                 <!-- News 1 -->
                                 <div class="container" id="news1-container">
                                     <div class="d-flex flex-wrap justify-content-center" id="content-news1">
-                                        <p class="col-sm-6 text-center text-sm-start">Secretary of State Antony J.
-                                            Blinken on Friday canceled a
-                                            weekend
-                                            trip to Beijing after a Chinese spy balloon was sighted above the Rocky
-                                            Mountain
-                                            state of Montana,
-                                            igniting a frenzy of media coverage and political commentary over a machine
-                                            that
-                                            the Pentagon
-                                            said posed no threat to the United States.</p>
+                                        <p class="col-sm-6 text-center text-sm-start" id="news1Paragraph"></p>
                                         <div class="col-sm-6" id="img-news1">
-                                            <img src="/img/Rectangle 19.png" class="d-block " alt="right-news1">
-                                            <h5>Furor Over Chinese Spy Balloon Leads to a Diplomatic Crisis</h5>
+                                            <img src="/img/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.png"
+                                                class="d-block " alt="right-news1" id="news1Img">
+                                            <h5 id="news1Heading"></h5>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- News 2 -->
                                 <div class="d-flex flex-column gap-3" id="news2-container">
                                     <div id="article1-container">
-                                        <h5>More Airports to Use Greener ‘Glide’ Approach to Landing
+                                        <h5 id="news2Heading">
                                         </h5>
                                         <div class="d-flex gap-3">
-                                            <p>By Ginny Dennis</p>
-                                            <p>Feb. 4, 2023</p>
+                                            <p id="news2Author"></p>
+                                            <p id="news2Date"></p>
                                         </div>
                                     </div>
                                     <div id="article2-container">
-                                        <h5>The Stopping Home Office Work’s Unproductive Problems (SHOW UP, get it?)
-                                            Act of 2023 passed the Republican-majority US House of Representatives on a
-                                            close-to-party-line vote l...
+                                        <h5 id="article2Heading">
                                         </h5>
                                     </div>
                                 </div>
@@ -179,31 +141,7 @@
                     </div>
                     <div id="otherNewsCollection">
                         <div class="row d-flex justify-content-center" id="otherNews-row">
-                            <!-- Other News 1 -->
-                            <div class="col-lg-6" id="otherNews">
-                                <div class="d-flex flex-column justify-content-end p-3" id="news1-img">
-                                    <div class="d-flex flex-wrap align-content-start">
-                                        <h5>Pervez Musharraf, Former Military Ruler of Pakistan,
-                                            Dies at 79</h5>
-                                    </div>
-                                    <div class="d-flex gap-3" id="author">
-                                        <p>By Ginny Dennis</p>
-                                        <p>Feb. 4, 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6" id="otherNews">
-                                <div class="d-flex flex-column justify-content-end p-3" id="news1-img">
-                                    <div class="d-flex flex-wrap align-content-start">
-                                        <h5>Pervez Musharraf, Former Military Ruler of Pakistan,
-                                            Dies at 79</h5>
-                                    </div>
-                                    <div class="d-flex gap-3" id="author">
-                                        <p>By Ginny Dennis</p>
-                                        <p>Feb. 4, 2023</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <!-- Other News -->
                         </div>
                     </div>
                     <nav class="blog-pagination d-flex justify-content-center flex-wrap" aria-label="Pagination">
@@ -218,112 +156,8 @@
                             <button id="headlinesButton">View All</button>
                         </div>
                         <div id="trending-container">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a class="d-flex flex-sm-column flex-xl-row align-items-center  py-4 gap-3 link-body-emphasis text-decoration-none border-top"
-                                        href="#">
-                                        <!-- image -->
-                                        <img src="./img/Rectangle 19.png" class="bd-placeholder-img trendingimages"
-                                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                        <!-- content -->
-                                        <div class="d-flex flex-column gap-2" id="trendingNewsContent">
-                                            <h6 class="mb-0">U.S. downs suspected Chinese spy balloon over the Atlantic
-                                                coast</h6>
-                                            <p>China called the vessel’s downing “an
-                                                excessive reaction” and said it “retains the right to respond
-                                                further.”</p>
-                                            <div class="d-flex justify-content-between">
-                                                <small class="text-body-secondary" id="trendingAuthor">By Caleb
-                                                    Hudnall</small>
-                                                <small class="text-body-secondary" id="date">Feb. 5, 2023</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="d-flex flex-sm-column flex-xl-row align-items-center  py-4 gap-3 link-body-emphasis text-decoration-none border-top"
-                                        href="#">
-                                        <!-- image -->
-                                        <img src="./img/Rectangle 19.png" class="bd-placeholder-img trendingimages"
-                                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                        <!-- content -->
-                                        <div class="d-flex flex-column gap-2" id="trendingNewsContent">
-                                            <h6 class="mb-0">U.S. downs suspected Chinese spy balloon over the Atlantic
-                                                coast</h6>
-                                            <p>China called the vessel’s downing “an
-                                                excessive reaction” and said it “retains the right to respond
-                                                further.”</p>
-                                            <div class="d-flex justify-content-between">
-                                                <small class="text-body-secondary" id="trendingAuthor">By Caleb
-                                                    Hudnall</small>
-                                                <small class="text-body-secondary" id="date">Feb. 5, 2023</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="d-flex flex-sm-column flex-xl-row align-items-center  py-4 gap-3 link-body-emphasis text-decoration-none border-top"
-                                        href="#">
-                                        <!-- image -->
-                                        <img src="./img/Rectangle 19.png" class="bd-placeholder-img trendingimages"
-                                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                        <!-- content -->
-                                        <div class="d-flex flex-column gap-2" id="trendingNewsContent">
-                                            <h6 class="mb-0">U.S. downs suspected Chinese spy balloon over the Atlantic
-                                                coast</h6>
-                                            <p>China called the vessel’s downing “an
-                                                excessive reaction” and said it “retains the right to respond
-                                                further.”</p>
-                                            <div class="d-flex justify-content-between">
-                                                <small class="text-body-secondary" id="trendingAuthor">By Caleb
-                                                    Hudnall</small>
-                                                <small class="text-body-secondary" id="date">Feb. 5, 2023</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="d-flex flex-sm-column flex-xl-row align-items-center  py-4 gap-3 link-body-emphasis text-decoration-none border-top"
-                                        href="#">
-                                        <!-- image -->
-                                        <img src="./img/Rectangle 19.png" class="bd-placeholder-img trendingimages"
-                                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                        <!-- content -->
-                                        <div class="d-flex flex-column gap-2" id="trendingNewsContent">
-                                            <h6 class="mb-0">U.S. downs suspected Chinese spy balloon over the Atlantic
-                                                coast</h6>
-                                            <p>China called the vessel’s downing “an
-                                                excessive reaction” and said it “retains the right to respond
-                                                further.”</p>
-                                            <div class="d-flex justify-content-between">
-                                                <small class="text-body-secondary" id="trendingAuthor">By Caleb
-                                                    Hudnall</small>
-                                                <small class="text-body-secondary" id="date">Feb. 5, 2023</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="d-flex flex-sm-column flex-xl-row align-items-center  py-4 gap-3 link-body-emphasis text-decoration-none border-top"
-                                        href="#">
-                                        <!-- image -->
-                                        <img src="./img/Rectangle 19.png" class="bd-placeholder-img trendingimages"
-                                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                        <!-- content -->
-                                        <div class="d-flex flex-column gap-2" id="trendingNewsContent">
-                                            <h6 class="mb-0">U.S. downs suspected Chinese spy balloon over the Atlantic
-                                                coast</h6>
-                                            <p>China called the vessel’s downing “an
-                                                excessive reaction” and said it “retains the right to respond
-                                                further.”</p>
-                                            <div class="d-flex justify-content-between">
-                                                <small class="text-body-secondary" id="trendingAuthor">By Caleb
-                                                    Hudnall</small>
-                                                <small class="text-body-secondary" id="date">Feb. 5, 2023</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
+                            <ul class="list-unstyled" id="trendingNewsUl">
+                                <!-- Trending News List -->
                             </ul>
                         </div>
                     </div>
@@ -403,8 +237,8 @@
             </div>
         </footer>
     </div>
-    <script src="./js/fetchNews.js" type="module"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/fetchNews.js" type="module"></script>
 </body>
 
 </html>

@@ -174,9 +174,9 @@ main {
     justify-content: center;
 }
 
-.navCon:hover,
 .navCon:focus {
     color: gray;
+    background-color: #04594d;
 }
 
 .navCon:hover {
@@ -235,6 +235,7 @@ main {
             font-weight: bold;
             text-align: left;
             line-height: auto;
+            color: #f7f8b7;
         }
 
         p {
@@ -273,7 +274,7 @@ main {
             font-size: 20px;
             font-weight: bold;
             line-height: auto;
-            color: #f7f7f4;
+            color: #f7f8b7;
             position: absolute;
             bottom: 0;
             left: 0;
@@ -348,7 +349,7 @@ main {
                             width: 360px;
                             font-size: 20px;
                             font-weight: auto;  
-                            color: white;
+                            color: #f7f8b7;
                         }
 
                         #author {
@@ -496,4 +497,8 @@ footer {
 
 .nav-link:hover {
     color: #04594d;
+}
+
+.navLinkText:hover {
+    color: gray;
 }
