@@ -3,32 +3,114 @@
 // const apiKey = process.env.NEWS_API_KEY;
 // const url = `https://newsdata.io/api/1/news?apikey=${apiKey}&country=au,us`;
 
-let subscriptionKey = process.env.NEWS_API_KEY;
-let url = `https://api.bing.microsoft.com/v7.0/news/search?q=World&originalImg=true`;
-
+let apiKey = process.env.NEWS_API_KEY;
+let url = `https://api.bing.microsoft.com/v7.0/news/search?q=World&originalImg=true`
 const sectionNews = [];
+document.querySelector('body').addEventListener('DOMContentLoaded', fetchNewsData(url));
 
-// document.querySelector('body').addEventListener('DOMContentLoaded', fetchNewsData());
+document.getElementById('searchButton').addEventListener('click', () => {
+    const searchInput = document.getElementById('site-search');
+    let url = `https://api.bing.microsoft.com/v7.0/news/search?q=${searchInput.value.toLowerCase()}&originalImg=true`;
+    fetchNewsData(url);
+});
 
-async function fetchNewsData() {
+document.getElementById('navPolitics').addEventListener('click', () => {
+    let url = `https://api.bing.microsoft.com/v7.0/news/search?q=Politics&originalImg=true`;
+    fetchNewsData(url);
+});
+
+document.getElementById('navWorld').addEventListener('click', () => {
+    let url = `https://api.bing.microsoft.com/v7.0/news/search?q=World&originalImg=true`;
+    fetchNewsData(url);
+});
+
+document.getElementById('navEconomy').addEventListener('click', () => {
+    let url = `https://api.bing.microsoft.com/v7.0/news/search?q=Economy&originalImg=true`;
+    fetchNewsData(url);
+});
+
+document.getElementById('navScience').addEventListener('click', () => {
+    let url = `https://api.bing.microsoft.com/v7.0/news/search?q=Science&originalImg=true`;
+    fetchNewsData(url);
+});
+
+document.getElementById('navBusiness').addEventListener('click', () => {
+    let url = `https://api.bing.microsoft.com/v7.0/news/search?q=Business&originalImg=true`;
+    fetchNewsData(url);
+});
+
+document.getElementById('navTravel').addEventListener('click', () => {
+    let url = `https://api.bing.microsoft.com/v7.0/news/search?q=Travel&originalImg=true`;
+    fetchNewsData(url);
+});
+
+document.getElementById('navClimate').addEventListener('click', () => {
+    let url = `https://api.bing.microsoft.com/v7.0/news/search?q=Climate&originalImg=true`;
+    fetchNewsData(url);
+});
+
+document.getElementById('navLifestyle').addEventListener('click', () => {
+    let url = `https://api.bing.microsoft.com/v7.0/news/search?q=Lifestyle&originalImg=true`;
+    fetchNewsData(url);
+});
+
+document.getElementById('navFood').addEventListener('click', () => {
+    let url = `https://api.bing.microsoft.com/v7.0/news/search?q=Food&originalImg=true`;
+    fetchNewsData(url);
+});
+
+document.getElementById('navSports').addEventListener('click', () => {
+    let url = `https://api.bing.microsoft.com/v7.0/news/search?q=Sports&originalImg=true`;
+    fetchNewsData(url);
+});
+
+async function fetchNewsData(url) {
     try {
         const response = await fetch(url, {
             method: 'GET',
             headers: {
-                'Ocp-Apim-Subscription-Key': subscriptionKey,
+                'Ocp-Apim-Subscription-Key': apiKey,
             },
         });
-        const jsonData = await response.json();
+        let jsonData = await response.json();
         const newsArticles = jsonData.value;
         console.log(newsArticles);
-        displayNewsInFirstSection(newsArticles);
-        displayNewsInSecondSection(newsArticles);
-        displayNewsInThirdSection(newsArticles);
+        (() => {
+            try {
+                if (document.querySelector('.carousel-item')) {
+                    document.querySelector('.carousel-item').remove();
+                    console.log('Removed Carousel items');
+                } else {
+                    console.log('No Carousel News');
+                }
+
+                if (document.querySelector('#otherNews-row')) {
+                    document.querySelector('#otherNews-row').remove();
+                    console.log('Removed Other News Items');
+                } else {
+                    console.log('No Other News');
+                }
+
+                if (document.querySelector('#trendingNewsUl')) {
+                    document.querySelector('#trendingNewsUl').remove();
+                    console.log('Removed Ul');
+                } else {
+                    console.log('No Trending News');
+                }
+            } catch (error) {
+                console.error('There are no branches:', error);
+            } finally {
+                displayNewsInFirstSection(newsArticles);
+                displayNewsInSecondSection(newsArticles);
+                displayNewsInThirdSection(newsArticles);
+            }
+        })();
+
     } catch (error) {
         console.error('Failed to fetch news data:', error);
     }
 }
-fetchNewsData();
+
 function displayNewsInFirstSection(articles) {
     const carouselDivsItems = document.querySelector('#carouselDivsItems');
     const blogPostHeading = document.querySelector('#blogPostHeading');
@@ -42,7 +124,7 @@ function displayNewsInFirstSection(articles) {
     const article2Heading = document.querySelector('#article2Heading');
 
     (() => {
-        let topNewsArray = articles.splice(0, 5);
+        let topNewsArray = articles.splice(0, 1);
         for (let i = 0; i < topNewsArray.length; i++) {
             let topNews = topNewsArray[i];
             // Carousel Item Div
@@ -115,10 +197,14 @@ function displayNewsInFirstSection(articles) {
 }
 
 function displayNewsInSecondSection(articles) {
-    let newArrayList = articles.splice(0, articles.length - 5);
+    let newArrayList = articles.splice(0, articles.length - 2);
+    const otherNews = document.querySelector('#otherNewsCollection');
+    const otherNewsRow = document.createElement('div');
+    otherNewsRow.className = 'row d-flex justify-content-center';
+    otherNewsRow.id = 'otherNews-row';
+
     for (let i = 0; i < newArrayList.length; i++) {
         let otherNewsList = newArrayList[i];
-        const otherNews = document.querySelector('#otherNews-row');
         // Create Elements
         const otherNewsDiv = document.createElement('div');
         const otherNewsImgDiv = document.createElement('div');
@@ -154,14 +240,18 @@ function displayNewsInSecondSection(articles) {
         otherNewsImgDiv.appendChild(otherNewsHDiv);
         otherNewsImgDiv.appendChild(otherNewsAuthorDiv);
         otherNewsDiv.appendChild(otherNewsImgDiv);
-        otherNews.appendChild(otherNewsDiv);
+        otherNewsRow.appendChild(otherNewsDiv);
+        otherNews.appendChild(otherNewsRow);
     }
 }
 
 function displayNewsInThirdSection(articles) {
+    const trendingContainer = document.querySelector('#trending-container');
+    const trendingNewsUl = document.createElement('ul');
+    trendingNewsUl.className = 'list-unstyled';
+    trendingNewsUl.id = 'trendingNewsUl';
     for (let i = 0; i < articles.length; i++) {
         let trendingNewsList = articles[i];
-        const trendingNewsUl = document.querySelector('#trendingNewsUl');
 
         const trendNewsLiDiv = document.createElement('li');
         const trendNewsAnchorDiv = document.createElement('a');
@@ -186,12 +276,10 @@ function displayNewsInThirdSection(articles) {
         trendNewsAuth.className = 'text-body-secondary';
         trendNewsAuth.id = 'trendingAuthor';
         trendNewsPd.id = 'date';
-
-
         trendImgDiv.src = trendingNewsList.image.contentUrl;
         trendNewsTitle.textContent = trendingNewsList.name;
         trendNewsDesc.textContent = trendingNewsList.description;
-        trendNewsAuth.textContent = trendingNewsList.provider[0].name ? trendingNewsList.provider[0].name : "Unknown";
+        // trendNewsAuth.textContent = trendingNewsList.provider[0].name ? trendingNewsList.provider[0].name : "Unknown";
 
         trendNewsAuthDiv.appendChild(trendNewsAuth);
         trendNewsAuthDiv.appendChild(trendNewsPd);
@@ -202,5 +290,6 @@ function displayNewsInThirdSection(articles) {
         trendNewsAnchorDiv.appendChild(trendNewsContentDiv);
         trendNewsLiDiv.appendChild(trendNewsAnchorDiv);
         trendingNewsUl.appendChild(trendNewsLiDiv);
+        trendingContainer.appendChild(trendingNewsUl);
     }
 }

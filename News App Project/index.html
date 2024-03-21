@@ -26,9 +26,7 @@
                             <input class="col-8 col-sm-8 col-md-12" type="search" id="site-search" name="q"
                                 aria-label="Search through site content" placeholder="Search for headlines">
                         </div>
-
-                        <button class="col-auto" type="submit">SEARCH</button>
-
+                        <button class="col-auto" type="submit" id="searchButton">SEARCH</button>
                     </div>
                 </div>
             </header>
@@ -43,34 +41,34 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="d-flex justify-content-center navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item navItems">
+                            <li class="nav-item navItems" id="navPolitics">
                                 <a class="nav-link navCon navLinkText" href="#">Politics</a>
                             </li>
-                            <li class="nav-item navItems">
+                            <li class="nav-item navItems" id="navWorld">
                                 <a class="nav-link navCon navLinkText" href="#">World</a>
                             </li>
-                            <li class="nav-item navItems">
+                            <li class="nav-item navItems" id="navEconomy">
                                 <a class="nav-link navCon navLinkText" href="#">Economy</a>
                             </li>
-                            <li class="nav-item navItems">
+                            <li class="nav-item navItems" id="navScience">
                                 <a class="nav-link navCon navLinkText" href="#">Science & Tech</a>
                             </li>
-                            <li class="nav-item navItems">
+                            <li class="nav-item navItems" id="navBusiness">
                                 <a class="nav-link navCon navLinkText" href="#">Business</a>
                             </li>
-                            <li class="nav-item navItems">
+                            <li class="nav-item navItems" id="navTravel">
                                 <a class="nav-link navCon navLinkText" href="#">Travel</a>
                             </li>
-                            <li class="nav-item navItems">
+                            <li class="nav-item navItems" id="navClimate">
                                 <a class="nav-link navCon navLinkText" href="#">Climate</a>
                             </li>
-                            <li class="nav-item navItems">
+                            <li class="nav-item navItems" id="navLifestyle">
                                 <a class="nav-link navCon navLinkText" href="#">Lifestyle</a>
                             </li>
-                            <li class="nav-item navItems">
+                            <li class="nav-item navItems" id="navFood">
                                 <a class="nav-link navCon navLinkText" href="#">Food</a>
                             </li>
-                            <li class="nav-item navItems">
+                            <li class="nav-item navItems" id="navSports">
                                 <a class="nav-link navCon navLinkText" href="#">Sports</a>
                             </li>
                         </ul>
@@ -140,9 +138,8 @@
                         <div class="align-self-center" id="horizontal-line"></div>
                     </div>
                     <div id="otherNewsCollection">
-                        <div class="row d-flex justify-content-center" id="otherNews-row">
-                            <!-- Other News -->
-                        </div>
+                        <!-- Other News -->
+
                     </div>
                     <nav class="blog-pagination d-flex justify-content-center flex-wrap" aria-label="Pagination">
                         <button class="btn-primary" tpye="button" id="viewMore">View More</button>
@@ -156,9 +153,7 @@
                             <button id="headlinesButton">View All</button>
                         </div>
                         <div id="trending-container">
-                            <ul class="list-unstyled" id="trendingNewsUl">
-                                <!-- Trending News List -->
-                            </ul>
+                            <!-- Trending News List -->
                         </div>
                     </div>
                 </div>
