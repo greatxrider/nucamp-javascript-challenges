@@ -15,7 +15,7 @@
     <link href="/node_modules/@fortawesome/fontawesome-free/css/solid.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="css/styles.scss" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Nucamp: A Better Way To Camp</title>
 </head>
 
@@ -59,6 +59,17 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i
                                 class="fa-solid fa-address-card fa-lg"></i> Contact</a></li>
+                    <!-- Weather Component -->
+                    <div id="weather" class="d-none d-md-flex align-items-center">
+                        <i id="weather-icon"></i>
+                        <span id="weather-temp"></span>
+                        <span id="weather-description" class="d-none d-lg-inline"></span>
+                        <span id="weather-feels-like">Feels like: <span id="feels-like-value"></span>°</span>
+                        <span id="weather-humidity">Humidity: <span id="humidity-value"></span>%</span>
+                        <span id="weather-wind">Wind: <span id="wind-speed"></span> km/h</span>
+                        <span id="weather-pressure">Pressure: <span id="pressure-value"></span> hPa</span>
+                        <span id="weather-visibility">Visibility: <span id="visibility-distance"></span> km</span>
+                    </div>
                 </ul>
                 <span class="navbar-text ms-auto">
                     <a role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -319,7 +330,7 @@
 
     <!-- Bootstrap JavaScript plugins -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="./js/scripts.js"></script>
+    <script src="./js/scripts.js" type="module"></script>
 </body>
 
 </html>
