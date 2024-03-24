@@ -7,7 +7,6 @@ const carousel = new bootstrap.Carousel('#homeCarousel', {
     pause: false
 })
 
-// when the pause button is clicked, pause the carousel
 const carouselButton = document.getElementById('carouselButton');
 const faIcon = document.getElementById('faButton');
 const weatherIconContainer = document.getElementById('weather-icon');
@@ -61,15 +60,3 @@ function displayWeather(weatherData) {
     weatherPressureValue.textContent = weatherData.wind.pressure;
     weatherVisibilityDistance.textContent = weatherData.visibility;
 }
-
-// carouselPause.addEventListener('click', function () {
-//     console.log('pausing the carousel');
-//     carousel.pause();
-// })
-
-// // when the play button is clicked, begin cycling through the images
-// const carouselPlay = document.getElementById('carouselPlay');
-// carouselPlay.addEventListener('click', function () {
-//     console.log('cycle the carousel');
-//     carousel.cycle();
-// })
