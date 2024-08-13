@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -8,95 +9,119 @@ html, body {
 #main-container {
   height: 94%;
   width: 100%;
-  margin: 0px;
-  background-size: 100% 100%;
-  margin: 0px;
   display: flex;
-  align-content: flex-end;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  /* Align content to the top */
+  align-items: center;
+  /* Center horizontally */
+  padding-top: 10%;
+  /* Move the container down from the center */
 }
 
 #card-container {
-  height: 351px;
-  width: 555px;
-  border-radius: 0px 20px 20px 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  height: auto;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.543);
+  text-align: center;
+  /* Center text inside the card */
 }
 
 #generator-card {
-  position: relative;
-  display: inline-block;
-  height: 174px;
-  width: 519px;
+  width: 100%;
   color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#generator-card img {
+  max-width: 100%;
+  /* Ensure the image fits within the container */
+  height: auto;
+  /* Maintain the aspect ratio */
+  border-radius: 10px;
+  /* Optional: rounded corners for images */
 }
 
 #btn-generate {
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 300;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
-  font-size: 24px;
-  line-height: auto;
-  height: 87px;
-  width: 306px;
+  font-size: 18px;
+  height: 50px;
+  width: 200px;
   border-radius: 25px;
   background-color: #ABABAB;
   border: none;
   color: #FFFFFF;
   transition: background-color 0.2s ease;
+  margin-top: 20px;
 }
 
 #generator-header {
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
-  font-size: 36px;
-  line-height: auto;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 #generator-description {
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 300;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
-  font-size: 24px;
-  line-height: 28px;
-  margin-top: 32px;
-  width: 519px;
-  height: 98px;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-#generator-header p {
-  text-align: center;
-  align-self: center;
-  width: 520px;
-  height: 44px;
-  margin: 0px;
-}
-
-#generator-description p {
-  display: flex;
-  text-align: center;
-  align-content: center;
-  margin: 0px;
+#btn-generate {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  height: 50px;
+  width: 200px;
+  border-radius: 25px;
+  background-color: #6c757d;
+  /* Base color */
+  border: none;
+  color: #FFFFFF;
+  /* White text color */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
 }
 
 #btn-generate:hover {
-  background-color: #cccbcb;
+  background-color: #5a6268;
+  /* Slightly darker on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow on hover */
+  transform: scale(1.05);
+  /* Slightly enlarge on hover */
 }
 
 #btn-generate:active {
-  background-color: #8b8b8b;
+  background-color: #4e555b;
+  /* Even darker when pressed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  /* Slightly smaller shadow on click */
+  transform: scale(0.98);
+  /* Slightly shrink on click */
 }
 
-/*# sourceMappingURL=cat-generator.css.map */
+footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
